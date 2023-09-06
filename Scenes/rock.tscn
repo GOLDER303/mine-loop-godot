@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bs08ky1tekt7g"]
+
+[ext_resource type="Material" uid="uid://clgo3ub6nl05d" path="res://Materials/RockMaterial.tres" id="1_iow0v"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4teq0"]
+material = ExtResource("1_iow0v")
+size = Vector3(5, 5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tv3i8"]
+size = Vector3(5, 5, 5)
+
+[node name="Rock" type="StaticBody3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_4teq0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_tv3i8")

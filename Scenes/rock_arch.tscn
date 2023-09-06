@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://vyy7i5fuu7au"]
+
+[ext_resource type="PackedScene" uid="uid://bs08ky1tekt7g" path="res://Scenes/rock.tscn" id="1_lvi43"]
+
+[node name="RockArch" type="Node3D"]
+
+[node name="Rock" parent="." instance=ExtResource("1_lvi43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 5)
+
+[node name="Rock2" parent="." instance=ExtResource("1_lvi43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, -5)
+
+[node name="Rock4" parent="." instance=ExtResource("1_lvi43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.5, -5)
+
+[node name="Rock3" parent="." instance=ExtResource("1_lvi43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.5, 5)
+
+[node name="Rock5" parent="." instance=ExtResource("1_lvi43")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.5, 0)
